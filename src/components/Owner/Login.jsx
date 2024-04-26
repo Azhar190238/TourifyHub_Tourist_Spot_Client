@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link,  useLocation, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Swal from "sweetalert2";
 import { authContext } from "../../Providers/AuthProvider";
@@ -10,7 +10,7 @@ const Login = () => {
     UseTitle("Login");
 
     // Initialize necessary hooks and context
-    const location = useLocation();
+    const area = useLocation();
     const naviGate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
     const { signIn, googleSignIn, gitHubSignIn } = useContext(authContext)
@@ -26,7 +26,7 @@ const Login = () => {
         try {
             // Attempt to sign in
             await signIn(email, password);
-            naviGate(location?.state ? location.state : '/');
+            naviGate(area?.state ? area.state : '/');
             Swal.fire({
                 icon: 'success',
                 title: 'Login successful!',
@@ -48,7 +48,7 @@ const Login = () => {
         googleSignIn()
             .then(result => {
                 console.log(result);
-                naviGate(location?.state ? location.state : '/');
+                naviGate(area?.state ? area.state : '/');
                 Swal.fire({
                     icon: 'success',
                     title: 'Login successful!',
@@ -71,7 +71,7 @@ const Login = () => {
         gitHubSignIn()
             .then(result => {
                 console.log(result);
-                naviGate(location?.state ? location.state : '/');
+                naviGate(area?.state ? area.state : '/');
                 Swal.fire({
                     icon: 'success',
                     title: 'Login successful!',
@@ -95,7 +95,7 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
                     <div className="text-center ">
-                        <h1 className="text-3xl font-bold">Login Your Account</h1>
+                        <h1 className="text-3xl font-bold">Please Login!</h1>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSignIn} className="card-body">
@@ -118,14 +118,14 @@ const Login = () => {
                                     </span>
                                 </div>
                                 <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                    <a href="#" className="label-text-alt link link-hover">Forget password?</a>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
                             <div>
-                                <p className="text-center"> or</p>
+                                <p className="text-center">Or</p>
                             </div>
                             <div className=" flex">
                                 <p>
@@ -136,7 +136,7 @@ const Login = () => {
                                 </p>
                             </div>
                             <div>
-                                <p>New Here ? please <Link to='/register'>
+                                <p>Are You New ? So <Link to='/register'>
                                     <button className="btn btn-outline btn-success">Register</button>
                                 </Link> </p>
 

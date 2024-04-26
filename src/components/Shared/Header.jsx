@@ -1,8 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
-// import user1 from '../assets/user.png'
 import { useContext } from "react";
 import { authContext } from "../../Providers/AuthProvider";
-// import { authContext } from "../Providers/AuthProvider";
+
 
 const Header = () => {
 
@@ -16,9 +15,11 @@ const Header = () => {
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
         
-        <li><NavLink to='/contact'>Contact Us</NavLink></li>
+        <li><NavLink to='/allTourist'> All Tourists Spot</NavLink></li>
         {user && <>
-            <li><NavLink to='/profile'>Profile</NavLink></li>
+            <li><NavLink to='/addSpot'> Add Tourists Spot</NavLink></li>
+            <li><NavLink to='/myList'> My List</NavLink></li>
+            <li><NavLink to='/profile'> Profile</NavLink></li>
             <li><NavLink to='/about'>About us</NavLink></li>
 
         </>
@@ -40,7 +41,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <Link to='/'>
-                        <a className="text-3xl">Land<span className="text-red-500">F</span>inder</a>
+                        <a className="text-3xl">Touri<span className="text-red-500">fy</span>Hub</a>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">

@@ -68,7 +68,7 @@ const Register = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col">
                     <div className="text-center">
-                        <h1 className="text-3xl font-bold">Register Your Account</h1>
+                        <h1 className="text-3xl font-bold"> Please Register Your Account</h1>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleRegister} className="card-body">
@@ -76,19 +76,19 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" name="name" placeholder="Name" className="input input-bordered" required />
+                                <input type="text" name="name" placeholder="Type here Name" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Photo URL</span>
                                 </label>
-                                <input type="url" name="photoUrl" placeholder="Photo URL" className="input input-bordered" required />
+                                <input type="url" name="photoUrl" placeholder="Photo's URL" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" name="email" placeholder="Email" className="input input-bordered" required />
+                                <input type="email" name="email" placeholder="Type here Email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -97,7 +97,7 @@ const Register = () => {
                                 <div className="flex">
                                 <input
                                  type={ showPassword ? "text":"password"}
-                                  name="password" placeholder="Password" className="input border-slate-300 pr-16" required />
+                                  name="password" placeholder="Type here Password" className="input border-slate-300 pr-16" required />
                                 <span onClick={()=>setShowPassword(!showPassword)} className="mt-4 -ml-5">
                                     {showPassword?<FaEyeSlash></FaEyeSlash>: <FaEye></FaEye> }
                                     </span>
@@ -111,7 +111,7 @@ const Register = () => {
                                 <button type="submit" className="btn btn-primary">Register</button>
                             </div>
                             <div>
-                                <p>Already have an account? <Link to='/login'>
+                                <p>Already Have A Account? <Link to='/login'>
                                     <button className="btn btn-outline btn-success">Login</button>
                                 </Link> </p>
                             </div>

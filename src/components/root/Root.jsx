@@ -4,8 +4,8 @@ import Footer from "../Shared/Footer";
 
 const Root = () => {
     return (
-        <div>
-            <div className="max-w-6xl mx-auto">
+        <div className="mx-5 my-8">
+            <div className=" md:10 lg:mx-20">
                 <Header></Header>
                 <Outlet></Outlet>
             </div>

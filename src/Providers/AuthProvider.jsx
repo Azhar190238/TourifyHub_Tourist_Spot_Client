@@ -6,6 +6,7 @@ import { auth } from "../components/firebase/Firebase";
 
 
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const authContext = createContext(null)
 
 const AuthProvider = ({ children }) => {

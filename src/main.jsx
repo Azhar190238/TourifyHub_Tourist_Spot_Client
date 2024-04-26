@@ -19,6 +19,9 @@ import Register from './components/Owner/Register';
 import Profile from './components/Profile/Profile';
 import AuthProvider from './Providers/AuthProvider';
 import Contact from './components/Contact/Contact';
+import AllTourist from './components/AllSpot/AllTourist';
+import AddSpot from './components/AddSpot/AddSpot';
+import MyList from './components/MyList/MyList';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,10 +37,10 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Login></Login>
       },
-      // {
-      //   path: '/location',
-      //   element: <Location></Location>
-      // },
+      {
+        path: '/allTourist',
+        element: <AllTourist></AllTourist>
+      },
       {
         path: '/register',
         element: <Register></Register>
@@ -48,12 +51,22 @@ const router = createBrowserRouter([
       },
       // {
       //   path: '/about',
-      //   element: <About></About>
+      //   element:
       // },
     
       {
         path: '/profile',
         element: <PrivateRoute> <Profile></Profile> </PrivateRoute>
+       
+      },
+      {
+        path: '/myList',
+        element: <PrivateRoute> <MyList></MyList> </PrivateRoute>
+       
+      },
+      {
+        path: '/addSpot',
+        element: <PrivateRoute> <AddSpot></AddSpot> </PrivateRoute>
        
       },
       // {
