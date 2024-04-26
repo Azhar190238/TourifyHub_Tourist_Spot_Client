@@ -6,10 +6,10 @@ const Statistics = () => {
             <section>
     {/* <div className="w-full h-[1px] bg-[#13131833]"></div> */}
     <div className="text-center mt-8 space-y-4">
-        <h2 className="text-3xl font-extrabold">Professional Hockeys Club</h2>
-        <p className="text-text-body">The official National Hockey League website including news,.
-            <br />
-            rosters, stats, schedules, teams, and video. </p>
+        <h2 className="text-3xl font-extrabold">Tourism trends and Ageing </h2>
+        <p className="text-text-body">Tourism Trends and Ageing" refers to the intersection of two significant
+        <br /> topics: the evolving trends in tourism and the impact of <br />
+         ageing populations on the tourism industry </p>
     </div>
     <div className="flex flex-col lg:flex-row justify-center gap-8 mt-14">
         <div className="text-center space-y-3">
