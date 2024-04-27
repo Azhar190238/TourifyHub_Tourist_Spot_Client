@@ -2,8 +2,10 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Spot from "./Spot/Spot";
+import UseTitle from "../../Title/UseTitle";
 
 const AllTourist = () => {
+    UseTitle("LandDetails");
     const allTourist = useLoaderData();
     const [tourists, setTourists] = useState(allTourist);
     
