@@ -5,7 +5,7 @@ import Spot from "./Spot/Spot";
 import UseTitle from "../../Title/UseTitle";
 
 const AllTourist = () => {
-    UseTitle("LandDetails");
+    UseTitle("AllTourist");
     const allTourist = useLoaderData();
     const [tourists, setTourists] = useState(allTourist);
     

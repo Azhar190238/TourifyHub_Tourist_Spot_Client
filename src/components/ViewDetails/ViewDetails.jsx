@@ -3,7 +3,7 @@ import UseTitle from "../../Title/UseTitle";
 
 
 const ViewDetails = () => {
-    UseTitle("LandDetails");
+    UseTitle("ViewDetails");
     const tourist = useLoaderData();
 
     return (
