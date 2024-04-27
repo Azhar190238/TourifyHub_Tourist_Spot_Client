@@ -1,3 +1,6 @@
+// import Swal from "sweetalert2";
+
+import Swal from 'sweetalert2';
 
 
 const AddSpot = () => {
@@ -15,8 +18,27 @@ const AddSpot = () => {
         const visitors_per_year = form.visitors_per_year.value;
         const location = form.location.value;
         const photo = form.photo.value;
-        const newCoffee = { name, email, country_name, spot_name, description, seasonality,cost,time,visitors_per_year,location, photo };
-        console.log(newCoffee);
+        const newSpot = { name, email, country_name, spot_name, description, seasonality,cost,time,visitors_per_year,location, photo };
+        console.log(newSpot);
+        fetch('http://localhost:5000/addSpot', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newSpot)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if(data.insertedId){
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Coffee added Successfully!",
+                    icon: "success",
+                    button: "Okay!",
+                  });
+            }
+        })
     }
     return (
         <div>

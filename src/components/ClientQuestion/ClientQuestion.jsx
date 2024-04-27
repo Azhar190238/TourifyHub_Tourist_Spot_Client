@@ -16,10 +16,11 @@ const ClientQuestion = () => {
                         <div className="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" checked="checked" />
                             <div className="collapse-title text-xl font-bold">
-                            What is land?
+                            What is Tourism?
                             </div>
                             <div className="collapse-content">
-                                <p> The land that deals with land transaction, sale, transfer, land tenure, etc. is called land law.</p>
+                                <p> Tourism is a social, cultural and economic phenomenon which entails the movement of people to countries or places
+                                 outside their usual environment for personal or business/professional purposes</p>
                             </div>
                             <div className="w-full h-[1px] bg-[#13131833]"></div>
                         </div>
@@ -27,11 +28,11 @@ const ClientQuestion = () => {
                         <div className="collapse collapse-plus ">
                             <input type="radio" name="my-accordion-3" />
                             <div className="collapse-title text-xl font-bold">
-                                What is land law?
+                            Definition of Tourist and Excursionist?
                             </div>
                             <div className="collapse-content">
-                                <p>The law that deals with land transaction, sale, transfer, land tenure, etc. is called land law.
-
+                                <p>
+                                Building on the definition of tourism, a commonly accepted description of a tourist is “someone who travels at least 80 km from his or her home for at least 24 hours, for business or leisure or other reasons” (LinkBC, 2008, p.8).
                                 </p>
                             </div>
                             <div className="w-full h-[1px] bg-[#13131833]"></div>
@@ -40,11 +41,11 @@ const ClientQuestion = () => {
                         <div className="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
                             <div className="collapse-title text-xl font-bold">
-                                What is a Khatian?
+                            Travel, and Hospitality: What are the Differences?
                             </div>
                             <div className="collapse-content">
-                                <p>Khatian is the land record that is prepared during the survey along with the details of the land ownership of one or more land owners based on the mouza.
-
+                                <p>
+                                It is common to confuse the terms tourism, travel, and hospitality or to define them as the same thing. While tourism is the all-encompassing umbrella term for the activities and industry that create the tourist experience
                                 </p>
                             </div>
                             <div className="w-full h-[1px] bg-[#13131833]"></div>
@@ -52,12 +53,13 @@ const ClientQuestion = () => {
                         <div className="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
                             <div className="collapse-title text-xl font-bold">
-                                What is Namjari?
+                            What are the benefits of tourism??
 
 
                             </div>
                             <div className="collapse-content">
-                                <p>Namjari is the process of registering the name of a new owner of a land by inheritance or purchase or any other process.
+                                <p>
+                                Tourism generates income and employment opportunities for local communities through spending on accommodation, food, transportation, and attractions.
 
                                 </p>
                             </div>
@@ -66,12 +68,13 @@ const ClientQuestion = () => {
                         <div className="collapse collapse-plus ">
                             <input type="radio" name="my-accordion-3" />
                             <div className="collapse-title text-xl font-bold">
-                                What is a Porcha?
+                            What are the challenges of tourism?
 
 
                             </div>
                             <div className="collapse-content">
-                                <p>The copy of the draft khatian prepared during the land survey which is distributed to the land owner before attestation is called field porcha. A copy of the Khatian record is called a Porcha after the Porcha has been attested by the revenue officer and the Khatian is finally published at the end of the objection and appeal hearing.
+                                <p>
+                                Popular destinations may face overcrowding, environmental degradation, and strain on resources due to excessive tourist numbers.
 
                                 </p>
                             </div>
@@ -80,14 +83,14 @@ const ClientQuestion = () => {
                         <div className="collapse collapse-plus">
                             <input type="radio" name="my-accordion-3" />
                             <div className="collapse-title text-xl font-bold">
-                                What is the schedule?
+                            How can tourism be made more sustainable?
 
 
 
                             </div>
                             <div className="collapse-content">
-                                <p>Schedule means introductory details of the land. In order to give the identity of a land, the name of the concerned mouza, khatian no., Dag no., Boundary of the land, amount of land etc.\
-
+                                <p>
+                                Sustainable tourism aims to minimize negative impacts on the environment, culture, and economy while maximizing benefits for local communities and preserving resources for future generations.
                                 </p>
                             </div>
                             <div className="w-full h-[1px] bg-[#13131833]"></div>
