@@ -1,12 +1,26 @@
 
 
 const AddSpot = () => {
-    const handleAddCoffee= event =>{
-
+    const handleAddSpot = event => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const country_name = form.country_name.value;
+        const spot_name = form.spot_name.value;
+        const description = form.description.value;
+        const seasonality = form.seasonality.value;
+        const cost = form.cost.value;
+        const time = form.time.value;
+        const visitors_per_year = form.visitors_per_year.value;
+        const location = form.location.value;
+        const photo = form.photo.value;
+        const newCoffee = { name, email, country_name, spot_name, description, seasonality,cost,time,visitors_per_year,location, photo };
+        console.log(newCoffee);
     }
     return (
         <div>
-            <form onSubmit={handleAddCoffee} className="bg-[#F4F3F0] mx-40 my-10">
+            <form onSubmit={handleAddSpot} className="bg-[#F4F3F0] mx-40 my-10">
                 <h1 className="pt-10 text-center font-sans text-5xl">Add New Tourist Spot</h1>
                 <p className="pt-4 text-center px-40"> Exploring a new tourist spot is like unwrapping a gift filled with surprises. May each adventure bring you joy, wonder, and unforgettable memories</p>
 
@@ -31,16 +45,6 @@ const AddSpot = () => {
                     </div>
                 </div>
                 <div className="flex gap-10 mx-20 my-10">
-                    <div className="md:w-1/2">
-                        <p>Short Description</p>
-                        <input type="text" placeholder="Enter Description" name="description" className="input input-bordered w-full" />
-                    </div>
-                    <div className="w-1/2">
-                        <p>Seasonality</p>
-                        <input type="text" placeholder="Enter Seasonality" name="seasonality" className="input input-bordered w-full" />
-                    </div>
-                </div>
-           <div className="flex gap-10 mx-20 my-10">
                     <div className="md:w-1/2">
                         <p>Short Description</p>
                         <input type="text" placeholder="Enter Description" name="description" className="input input-bordered w-full" />
