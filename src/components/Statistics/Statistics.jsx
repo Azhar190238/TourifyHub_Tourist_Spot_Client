@@ -7,7 +7,7 @@ const Statistics = () => {
     {/* <div className="w-full h-[1px] bg-[#13131833]"></div> */}
     <div className="text-center mt-8 space-y-4">
         <h2 className="text-3xl font-extrabold">Tourism trends and Ageing </h2>
-        <p className="text-text-body">Tourism Trends and Ageing" refers to the intersection of two significant
+        <p className="text-text-body">Tourism Trends and Ageing refers to the intersection of two significant
         <br /> topics: the evolving trends in tourism and the impact of <br />
          ageing populations on the tourism industry </p>
     </div>
