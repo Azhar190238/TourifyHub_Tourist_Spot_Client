@@ -19,7 +19,7 @@ const Spot = ({ tourist }) => {
             <div className="card-body items-center ">
                 <h2 className="card-title text-center">{spot_name}</h2>
                 <div className="flex space-x-3">
-                    <p className="w-2/3"><span className="text-lg font-semibold">Average Cost: </span>{cost}</p>
+                    <p className="w-2/3"><span className="text-lg font-semibold">Average Cost: </span> ${cost} Per day</p>
                     <p className="w-1/3"><span className="text-lg font-semibold">Travel Time: </span>{time}</p>
                 </div>
                 <div className="flex space-x-3">
