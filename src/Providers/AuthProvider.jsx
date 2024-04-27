@@ -2,7 +2,8 @@
 /* eslint-disable react/prop-types */
 import { createContext, useEffect, useState } from "react";
 import { GoogleAuthProvider, GithubAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-import { auth } from "../components/firebase/Firebase";
+import { auth } from "../components/firebase/Firebase.config";
+// import { auth } from "../components/firebase/Firebase";
 
 
 
