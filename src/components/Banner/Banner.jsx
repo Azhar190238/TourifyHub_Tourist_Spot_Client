@@ -9,9 +9,9 @@
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                             <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome The Beautiful & Gorgeous Land</h1>
-                                <p className="mb-5">In surveying and property law, a land description or legal description is a written statement that delineates the boundaries of a piece of real property. In the written transfer of real property.</p>
-                                <button className="btn btn-primary">Let's Visit This Place</button>
+                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome To The Beautiful & Gorgeous Place</h1>
+                                <p className="mb-5">Tourism, the act and process of spending time away from home in pursuit of recreation, relaxation, and pleasure, while making use of the commercial provision of services.</p>
+                                <button className="btn btn-primary">Please Explore This Place</button>
                             </div>
                         </div>
                     </div>
@@ -24,10 +24,10 @@
                     <div className="hero md:w-full sm:w-full rounded-xl" style={{ backgroundImage: 'url(https://i.postimg.cc/qvHvFJ69/2.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight ">Welcome The Beautiful & Gorgeous Land</h1>
-                                <p className="mb-5">In surveying and property law, a land description or legal description is a written statement that delineates the boundaries of a piece of real property. In the written transfer of real property.</p>
-                                <button className="btn btn-primary">Let's Visit This Place</button>
+                        <div className="max-w-md">
+                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome To The Beautiful & Gorgeous Place</h1>
+                                <p className="mb-5">Tourism, the act and process of spending time away from home in pursuit of recreation, relaxation, and pleasure, while making use of the commercial provision of services.</p>
+                                <button className="btn btn-primary">Please Explore This Place</button>
                             </div>
                         </div>
                     </div>
@@ -40,10 +40,10 @@
                     <div className="hero md:w-full sm:w-full rounded-xl" style={{ backgroundImage: 'url(https://i.postimg.cc/LsH6HxTD/1.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome The Beautiful & Gorgeous Land</h1>
-                                <p className="mb-5">In surveying and property law, a land description or legal description is a written statement that delineates the boundaries of a piece of real property. In the written transfer of real property.</p>
-                                <button className="btn btn-primary">Let's Visit This Place</button>
+                        <div className="max-w-md">
+                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome To The Beautiful & Gorgeous Place</h1>
+                                <p className="mb-5">Tourism, the act and process of spending time away from home in pursuit of recreation, relaxation, and pleasure, while making use of the commercial provision of services.</p>
+                                <button className="btn btn-primary">Please Explore This Place</button>
                             </div>
                         </div>
                     </div>
@@ -56,10 +56,10 @@
                     <div className="hero md:w-full sm:w-full rounded-xl" style={{ backgroundImage: 'url(https://i.postimg.cc/zBvzh34R/3.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
-                            <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome The Beautiful & Gorgeous Land</h1>
-                                <p className="mb-5">In surveying and property law, a land description or legal description is a written statement that delineates the boundaries of a piece of real property. In the written transfer of real property.</p>
-                                <button className="btn btn-primary">Let's Visit This Place</button>
+                        <div className="max-w-md">
+                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome To The Beautiful & Gorgeous Place</h1>
+                                <p className="mb-5">Tourism, the act and process of spending time away from home in pursuit of recreation, relaxation, and pleasure, while making use of the commercial provision of services.</p>
+                                <button className="btn btn-primary">Please Explore This Place</button>
                             </div>
                         </div>
                     </div>

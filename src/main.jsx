@@ -22,6 +22,7 @@ import Contact from './components/Contact/Contact';
 import AllTourist from './components/AllSpot/AllTourist';
 import AddSpot from './components/AddSpot/AddSpot';
 import MyList from './components/MyList/MyList';
+import ViewDetails from './components/ViewDetails/ViewDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,7 +40,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/allTourist',
-        element: <AllTourist></AllTourist>
+        element: <AllTourist></AllTourist>,
+        loader: ()=> fetch('http://localhost:5000/addSpot')
       },
       {
         path: '/register',
@@ -66,9 +68,20 @@ const router = createBrowserRouter([
       },
       {
         path: '/addSpot',
-        element: <PrivateRoute> <AddSpot></AddSpot> </PrivateRoute>
+        element: <PrivateRoute> <AddSpot></AddSpot> </PrivateRoute>,
        
       },
+      {
+        path: '/viewDetails/:id',
+        element: <PrivateRoute> <ViewDetails></ViewDetails> </PrivateRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/addSpot/${params.id}`)
+      },
+
+      // {
+      //   path: "/updated/:id",
+      //   element: <UpdatedCoffee></UpdatedCoffee>,
+      //   loader: ({params}) => fetch(`http://localhost:5000/coffee/${params.id}`)
+      // },
       // {
       //   path: '/Land/:id',
       //   element: <PrivateRoute><LandDetails></LandDetails></PrivateRoute>,
