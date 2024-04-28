@@ -17,7 +17,6 @@ import Home from './components/Home/Home';
 import Login from './components/Owner/Login';
 import Register from './components/Owner/Register';
 import AuthProvider from './Providers/AuthProvider';
-import Contact from './components/Contact/Contact';
 import AllTourist from './components/AllSpot/AllTourist';
 import AddSpot from './components/AddSpot/AddSpot';
 import MyList from './components/MyList/MyList';
@@ -44,19 +43,18 @@ const router = createBrowserRouter([
         element: <AllTourist></AllTourist>,
         loader: ()=> fetch('http://localhost:5000/addSpot')
       },
+  // all countries fetch collection
+
+      // {
+      //   path: '/',
+      //   element: <CountrySection></CountrySection>,
+      //    loader: ()=> fetch('http://localhost:5000/countries')
+      // },
+
       {
         path: '/register',
         element: <Register></Register>
       },
-      {
-        path: '/contact',
-        element: <Contact></Contact>
-      },
-      // {
-      //   path: '/about',
-      //   element:
-      // },
-    
       {
         path: '/about',
         element: <PrivateRoute>  <About></About> </PrivateRoute>
@@ -65,8 +63,6 @@ const router = createBrowserRouter([
       {
         path: '/myList',
         element: <PrivateRoute> <MyList></MyList> </PrivateRoute>,
-        loader: ()=> fetch('http://localhost:5000/addSpot')
-       
       },
       {
         path: "/updated/:id",
@@ -83,17 +79,6 @@ const router = createBrowserRouter([
         element: <PrivateRoute> <ViewDetails></ViewDetails> </PrivateRoute>,
         loader: ({params}) => fetch(`http://localhost:5000/addSpot/${params.id}`)
       },
-
-      // {
-      //   path: "/updated/:id",
-      //   element: <UpdatedCoffee></UpdatedCoffee>,
-      //   loader: ({params}) => fetch(`http://localhost:5000/coffee/${params.id}`)
-      // },
-      // {
-      //   path: '/Land/:id',
-      //   element: <PrivateRoute><LandDetails></LandDetails></PrivateRoute>,
-      //   loader: () => fetch('/Land.json')
-      // }
     ]
   },
 ]);

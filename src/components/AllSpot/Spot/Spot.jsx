@@ -1,15 +1,28 @@
-
-
-
-// {/* <button className="btn join-item"> <img src="https://i.postimg.cc/8PrqQLvc/Group-14.png" alt="" /></button>
-//           <button className="btn join-item"><img src="https://i.postimg.cc/HxhPFLsb/Group-12.png" alt="" /></button>
-//           <button  className="btn "><img src="https://i.postimg.cc/XXM17D5J/Group-13.png" alt="" /></button> */}
-
+import  { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
+import { BeatLoader } from 'react-spinners';
 
 const Spot = ({ tourist }) => {
-    const {_id, photo, cost, spot_name, time, seasonality, visitors_per_year } = tourist;
+    const { _id, photo, cost, spot_name, time, seasonality, visitors_per_year } = tourist;
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate loading time
+        const timeout = setTimeout(() => {
+            setLoading(false);
+        }, 1000);
+
+        return () => clearTimeout(timeout);
+    }, []);
+
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center h-screen">
+                <BeatLoader color="#4F46E5" loading={loading} size={20} />
+            </div>
+        );
+    }
 
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
