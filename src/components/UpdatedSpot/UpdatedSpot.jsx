@@ -48,8 +48,8 @@ const UpdatedSpot = () => {
 
 <div>
 <form onSubmit={handleUpdatedSpot} className="bg-[#F4F3F0] mx-40 my-10">
-    <h1 className="pt-10 text-center font-sans text-5xl">Add New Tourist Spot</h1>
-    <p className="pt-4 text-center px-40"> Exploring a new tourist spot is like unwrapping a gift filled with surprises. May each adventure bring you joy, wonder, and unforgettable memories</p>
+    <h1 className="pt-10 text-center font-sans text-5xl">Updated Existing Tourist Spot</h1>
+    <p className="pt-4 text-center px-40"> You can modify the table row to display a truncated version of the description. In this modification, I've added a check it from all tourist spot </p>
     <div className="flex gap-10 mx-20 my-8">
         <div className="md:w-1/2">
             <p>Country Name</p>
