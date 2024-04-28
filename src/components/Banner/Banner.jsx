@@ -1,5 +1,6 @@
 
-  
+import {Typewriter} from 'react-simple-typewriter';
+// import 'react-simple-typewriter/dist/index.css';
         const Banner = () => {
             return (
      <div>
@@ -9,7 +10,17 @@
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                             <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome To The Beautiful & Gorgeous Place</h1>
+                            <h1 className="mb-5 text-5xl font-bold">
+                  <Typewriter
+                    words={['Welcome To The Beautiful & Gorgeous Place']}
+                    loop
+                    cursor
+                    cursorStyle='_'
+                    typeSpeed={100}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+                </h1>
                                 <p className="mb-5">Tourism, the act and process of spending time away from home in pursuit of recreation, relaxation, and pleasure, while making use of the commercial provision of services.</p>
                                 <button className="btn btn-primary">Please Explore This Place</button>
                             </div>
@@ -25,7 +36,17 @@
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome To The Beautiful & Gorgeous Place</h1>
+                        <h1 className="mb-5 text-5xl font-bold">
+                  <Typewriter
+                    words={['Welcome To The Beautiful & Gorgeous Place']}
+                    loop
+                    cursor
+                    cursorStyle='_'
+                    typeSpeed={100}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+                </h1>
                                 <p className="mb-5">Tourism, the act and process of spending time away from home in pursuit of recreation, relaxation, and pleasure, while making use of the commercial provision of services.</p>
                                 <button className="btn btn-primary">Please Explore This Place</button>
                             </div>
@@ -41,7 +62,17 @@
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome To The Beautiful & Gorgeous Place</h1>
+                        <h1 className="mb-5 text-5xl font-bold">
+                  <Typewriter
+                    words={['Welcome To The Beautiful & Gorgeous Place']}
+                    loop
+                    cursor
+                    cursorStyle='_'
+                    typeSpeed={100}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+                </h1>
                                 <p className="mb-5">Tourism, the act and process of spending time away from home in pursuit of recreation, relaxation, and pleasure, while making use of the commercial provision of services.</p>
                                 <button className="btn btn-primary">Please Explore This Place</button>
                             </div>
@@ -57,7 +88,17 @@
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold animate__animated animate__backInRight">Welcome To The Beautiful & Gorgeous Place</h1>
+                        <h1 className="mb-5 text-5xl font-bold">
+                  <Typewriter
+                    words={['Welcome To The Beautiful & Gorgeous Place']}
+                    loop
+                    cursor
+                    cursorStyle='_'
+                    typeSpeed={100}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+                </h1>
                                 <p className="mb-5">Tourism, the act and process of spending time away from home in pursuit of recreation, relaxation, and pleasure, while making use of the commercial provision of services.</p>
                                 <button className="btn btn-primary">Please Explore This Place</button>
                             </div>
