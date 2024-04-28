@@ -101,8 +101,7 @@ const Header = () => {
                 <>
                     <li><NavLink to='/addSpot'> Add Tourists Spot</NavLink></li>
                     <li><NavLink to='/myList'> My List</NavLink></li>
-                    <li><NavLink to='/profile'> Profile</NavLink></li>
-                    <li><NavLink to='/about'>About us</NavLink></li>
+                    <li><NavLink to='/about'>About Me</NavLink></li>
                 </>
             )}
         </>

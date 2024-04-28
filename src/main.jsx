@@ -16,13 +16,14 @@ import Root from './components/root/Root';
 import Home from './components/Home/Home';
 import Login from './components/Owner/Login';
 import Register from './components/Owner/Register';
-import Profile from './components/Profile/Profile';
 import AuthProvider from './Providers/AuthProvider';
 import Contact from './components/Contact/Contact';
 import AllTourist from './components/AllSpot/AllTourist';
 import AddSpot from './components/AddSpot/AddSpot';
 import MyList from './components/MyList/MyList';
 import ViewDetails from './components/ViewDetails/ViewDetails';
+import About from './components/About/About';
+import UpdatedSpot from './components/UpdatedSpot/UpdatedSpot';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -57,14 +58,20 @@ const router = createBrowserRouter([
       // },
     
       {
-        path: '/profile',
-        element: <PrivateRoute> <Profile></Profile> </PrivateRoute>
+        path: '/about',
+        element: <PrivateRoute>  <About></About> </PrivateRoute>
        
       },
       {
         path: '/myList',
-        element: <PrivateRoute> <MyList></MyList> </PrivateRoute>
+        element: <PrivateRoute> <MyList></MyList> </PrivateRoute>,
+        loader: ()=> fetch('http://localhost:5000/addSpot')
        
+      },
+      {
+        path: "/updated/:id",
+        element: <UpdatedSpot></UpdatedSpot>,
+        loader: ({params}) => fetch(`http://localhost:5000/addSpot/${params.id}`)
       },
       {
         path: '/addSpot',
