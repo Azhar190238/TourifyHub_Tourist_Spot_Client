@@ -29,7 +29,7 @@ const MyList = () => {
                 if(data.deletedCount>0){
                           Swal.fire({
                 title: "Deleted!",
-                text: "Your Coffee has been deleted.",
+                text: "Your Tourist Spot been deleted.",
                 icon: "success"
         })
             const remaining = tourism.filter(cof=> cof._id!== _id)
