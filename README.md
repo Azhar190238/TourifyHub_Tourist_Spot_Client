@@ -1,30 +1,30 @@
-My website name is : 
-
+My website name is : TourifyHub
+My selected category's name: Southeast Asia
 
 
 Live link:
 
 
-Here are five basic features that a land-related website might offer;
+Here are seven basic features that a land-related website might offer;
  
- 1) Property Listings: A simple, easy-to-navigate interface displaying available land     properties, including basic details like location, size, and price.
+ 1) Home Page: This will be the landing page with a brief description of your application and maybe  carousel or cards displaying some popular tourist spots.
+ 2) All Tourist Spot Page: This page will display all the tourist spots available in your database.
+ 3) Add Tourist Spot Page: This page will allow users to add new tourist spots.
+ 4) My List Page: A private/protected route where users can see the tourist spots they've added to the database.
+ 5) Update/Delete: Functionality to update or delete a tourist spot, typically accessible from the My List page.
 
- 2) Contact Information: Clear contact information for property owners, real estate agents, or the website administrators, enabling users to inquire about listings or request additional information.
+ 6) User Registration:  Simple form for users to input basic details (name, email, password). Ensure entered information meets required criteria (valid email format, strong password).
 
- 3) User Registration:  Simple form for users to input basic details (name, email, password). Ensure entered information meets required criteria (valid email format, strong password).
+ 7) User Login: Form for users to input registered email and password. Option to remember login credentials for convenience. Link or button for password reset, typically involving email confirmation.
 
- 4) User Login: Form for users to input registered email and password. Option to remember login credentials for convenience. Link or button for password reset, typically involving email confirmation.
 
- 5) Also Photo Galleries: Basic photo galleries accompanying each property listing, showcasing images of the land from different angles and perspectives.
 
-npm packages:
+npm packages: 
  I am using here three packages like;
- 1) Animate.css (Which used in banner header)
-    npm install animate.css
- 2) React Leaflet (Which used in view details page and exactly location name)
-   
-   npm install react react-dom leaflet
-   npm install react-leaflet
+ 1) React-simple-typewriter (Which used in banner header)
+    npm i react-simple-typewriter
+    
 
-3) React Hook form(used in log in form)
-   npm install react-hook-form
+ 2) React Tooltip (Which used in log out button)
+    npm install react-tooltip
+
