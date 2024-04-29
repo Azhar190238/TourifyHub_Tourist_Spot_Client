@@ -1,9 +1,11 @@
 import { useLoaderData  } from "react-router-dom";
 import Swal from "sweetalert2";
+import UseTitle from "../../Title/UseTitle";
 
 
 
 const UpdatedSpot = () => {
+    UseTitle("Updated Spot");
     const tourist= useLoaderData() ;
     const {_id, country_name, spot_name, description, seasonality,cost,time,visitors_per_year,location, photo } = tourist;
     const handleUpdatedSpot = event => {

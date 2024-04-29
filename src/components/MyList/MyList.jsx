@@ -2,10 +2,12 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { authContext } from "../../Providers/AuthProvider";
+import UseTitle from "../../Title/UseTitle";
 
 
 
 const MyList = () => {
+    UseTitle("MyList");
     // const tourists = useLoaderData();
     const { user } = useContext(authContext);
     const [tourism, setTourism] = useState([]);

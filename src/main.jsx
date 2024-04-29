@@ -23,6 +23,7 @@ import MyList from './components/MyList/MyList';
 import ViewDetails from './components/ViewDetails/ViewDetails';
 import About from './components/About/About';
 import UpdatedSpot from './components/UpdatedSpot/UpdatedSpot';
+import AllCountry from './components/AllCountry/AllCountry';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,14 +44,6 @@ const router = createBrowserRouter([
         element: <AllTourist></AllTourist>,
         loader: ()=> fetch('http://localhost:5000/addSpot')
       },
-  // all countries fetch collection
-
-      // {
-      //   path: '/',
-      //   element: <CountrySection></CountrySection>,
-      //    loader: ()=> fetch('http://localhost:5000/countries')
-      // },
-
       {
         path: '/register',
         element: <Register></Register>
@@ -64,6 +57,7 @@ const router = createBrowserRouter([
         path: '/myList',
         element: <PrivateRoute> <MyList></MyList> </PrivateRoute>,
       },
+    
       {
         path: "/updated/:id",
         element: <UpdatedSpot></UpdatedSpot>,
@@ -78,6 +72,11 @@ const router = createBrowserRouter([
         path: '/viewDetails/:id',
         element: <PrivateRoute> <ViewDetails></ViewDetails> </PrivateRoute>,
         loader: ({params}) => fetch(`http://localhost:5000/addSpot/${params.id}`)
+      },
+      {
+        path: '/allCountry/:id',
+        element: <PrivateRoute> <AllCountry></AllCountry> </PrivateRoute>,
+        loader : ({params})=> fetch(`http://localhost:5000/countries/${params.id}`)
       },
     ]
   },

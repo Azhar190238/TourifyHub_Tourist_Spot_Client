@@ -6,8 +6,10 @@ import ClientQuestion from "../ClientQuestion/ClientQuestion";
 import CountrySection from "../CountrySection/CountrySection";
 import Statistics from "../Statistics/Statistics";
 import TouristSpot from "../TouristSpot/TouristSpot";
+import UseTitle from "../../Title/UseTitle";
 
 const Home = () => {
+    UseTitle("Home");
     const [isDarkTheme, setIsDarkTheme] = useState(false);
 
     const toggleTheme = () => {
@@ -15,7 +17,7 @@ const Home = () => {
     };
 
     return (
-        <div className={` ${isDarkTheme ? "bg-white" : "bg-gray-700 text-gray-400"} min-h-screen transition-colors duration-500`}>
+        <div className={` ${isDarkTheme ? "bg-gray-700 text-gray-400" : "bg-white"} min-h-screen transition-colors duration-500`}>
             <Banner></Banner>
             <h2 className="text-5xl text-center p-10">Tourists Spots</h2>
             <TouristSpot></TouristSpot>

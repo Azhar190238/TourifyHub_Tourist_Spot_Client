@@ -1,9 +1,11 @@
 // import Swal from "sweetalert2";
 
 import Swal from 'sweetalert2';
+import UseTitle from '../../Title/UseTitle';
 
 
 const AddSpot = () => {
+    UseTitle("Add Spot");
     const handleAddSpot = event => {
         event.preventDefault();
         const form = event.target;

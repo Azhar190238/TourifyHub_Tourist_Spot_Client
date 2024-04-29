@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import UseTitle from "../../Title/UseTitle";
 
 
 const About = () => {
+  UseTitle("About");
     return (
         <div>
            <div className="hero min-h-screen bg-base-200">
