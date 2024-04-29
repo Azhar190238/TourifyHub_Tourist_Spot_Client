@@ -26,7 +26,7 @@ const Home = () => {
             <ClientQuestion></ClientQuestion>
 
             {/* Dark/Light Theme Toggle Button */}
-            <div className="fixed top-12 left-80">
+            <div className="absolute top-24 md:top-12 left-14 md:left-80">
                 <button
                     className="bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-full focus:outline-none"
                     onClick={toggleTheme}

@@ -15,7 +15,7 @@ const CountrySection = ( ) => {
             })
     }, [])
     return (
-        <div className="mx-20">
+        <div className="lg:mx-20">
             
             <h2 className="text-5xl text-center p-10">Countries Tourist spots</h2>
             {/* <h2>countries: {countries.length}</h2> */}

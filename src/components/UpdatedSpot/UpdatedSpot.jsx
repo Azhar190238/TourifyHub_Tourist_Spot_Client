@@ -49,10 +49,10 @@ const UpdatedSpot = () => {
     return (
 
 <div>
-<form onSubmit={handleUpdatedSpot} className="bg-[#F4F3F0] mx-40 my-10">
-    <h1 className="pt-10 text-center font-sans text-5xl">Updated Existing Tourist Spot</h1>
-    <p className="pt-4 text-center px-40"> You can modify the table row to display a truncated version of the description. In this modification, I have added a check it from all tourist spot </p>
-    <div className="flex gap-10 mx-20 my-8">
+<form onSubmit={handleUpdatedSpot} className="bg-[#F4F3F0] mx-10 md:mx-20 lg:mx-40 my-10">
+    <h1 className="pt-10 text-center font-sans text-2xl md:text-5xl">Updated Existing Tourist Spot</h1>
+    <p className="pt-4 text-center px-10 md:px-20 lg:px-40"> You can modify the table row to display a truncated version of the description. In this modification, I have added a check it from all tourist spot </p>
+    <div className="flex gap-4 md:gap-10 mx-5 md:mx-20 my-8">
         <div className="md:w-1/2">
             <p>Country Name</p>
             <input type="text" placeholder="Enter Country name" name="country_name" defaultValue={country_name} className="input input-bordered w-full" />
@@ -62,7 +62,7 @@ const UpdatedSpot = () => {
             <input type="text" placeholder="Enter Spot Name" name="spot_name" defaultValue={spot_name} className="input input-bordered w-full" />
         </div>
     </div>
-    <div className="flex gap-10 mx-20 my-10">
+    <div className="flex gap-4 md:gap-10 mx-5 md:mx-20 my-10">
         <div className="md:w-1/2">
             <p>Short Description</p>
             <input type="text" placeholder="Enter Description" name="description" defaultValue={description} className="input input-bordered w-full" />
@@ -72,7 +72,7 @@ const UpdatedSpot = () => {
             <input type="text" placeholder="Enter Seasonality" name="seasonality" defaultValue={seasonality} className="input input-bordered w-full" />
         </div>
     </div>
-    <div className="flex gap-10 mx-20 my-10">
+    <div className="flex gap-4 md:gap-10 mx-5 md:mx-20 my-10">
         <div className="md:w-1/2">
             <p>Average Cost</p>
             <input type="text" placeholder="Enter Average Cost" name="cost" defaultValue={cost} className="input input-bordered w-full" />
@@ -82,7 +82,7 @@ const UpdatedSpot = () => {
             <input type="text" placeholder="Travel Time" name="time" defaultValue={time} className="input input-bordered w-full" />
         </div>
     </div>
-    <div className="flex gap-10 mx-20 my-10">
+    <div className="flex gap-4 md:gap-10 mx-5 md:mx-20 my-10">
         <div className="md:w-1/2">
             <p>Visitors Per Year</p>
             <input type="text" placeholder="Enter Visitors Per Year " name="visitors_per_year" defaultValue={visitors_per_year} className="input input-bordered w-full" />

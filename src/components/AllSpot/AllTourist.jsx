@@ -16,7 +16,7 @@ const AllTourist = () => {
     };
     
     return (
-        <div className="mx-20">
+        <div className="lg:mx-20">
             <div className="flex justify-center">
                 <div className="">
                     <div className="dropdown">

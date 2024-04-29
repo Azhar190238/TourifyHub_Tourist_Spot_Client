@@ -64,7 +64,7 @@ const MyList = () => {
             <table className="table">
                 {/* head */}
                 <thead>
-                    <tr className="text-xl">
+                    <tr className="md:text-xl">
                         <th>Image</th>
                         <th>Spot Name</th>
                         <th>Location</th>
@@ -77,7 +77,7 @@ const MyList = () => {
                         <tr
                             key={tourist._id}>
                             <td>
-                                <div className="flex items-center gap-3">
+                                <div className="flex items-center md:gap-3">
                                     <div className="avatar">
                                         <div className="mask mask-squircle w-12 h-12">
                                             <img src={tourist.photo} alt="Avatar Tailwind CSS Component" />
@@ -93,7 +93,7 @@ const MyList = () => {
                             <td>{tourist.location}</td>
                             <td>{tourist.seasonality}</td>
                             <td>
-                                <div className="space-x-2">
+                                <div className=" space-y-2 lg:space-x-2 ">
                                     <Link to={`/updated/${tourist._id}`}>
                                         <button className="btn">Update</button>
                                     </Link>

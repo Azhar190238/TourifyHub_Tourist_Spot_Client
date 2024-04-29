@@ -39,7 +39,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <Link to='/'>
-                        <a className="text-3xl">Touri<span className="text-red-500">fy</span>Hub</a>
+                        <a className="text-xl md:text-3xl">Touri<span className="text-red-500">fy</span>Hub</a>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
