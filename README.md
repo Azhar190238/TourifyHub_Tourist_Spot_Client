@@ -1,8 +1,9 @@
+B9 A10 Type-01 Requirements
 My website name is : TourifyHub
 My selected category's name: Southeast Asia
 
 
-Live link:
+Live link: https://tour-24-193f5.web.app/
 
 
 Here are seven basic features that a land-related website might offer;
