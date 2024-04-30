@@ -10,7 +10,7 @@ const AllCountry = () => {
     const [countries, setCountries] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allCountry/${countryLoader.country_name}`)
+        fetch(`https://assignment-10-server-tan-sigma.vercel.app/allCountry/${countryLoader.country_name}`)
             .then(res => res.json())
             .then(data => {
                 setCountries(data)

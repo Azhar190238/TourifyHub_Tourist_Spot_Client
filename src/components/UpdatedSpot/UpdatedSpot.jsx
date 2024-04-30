@@ -24,7 +24,7 @@ const UpdatedSpot = () => {
         console.log(newSpot);
 
       // Send data to the server side
-      fetch(`http://localhost:5000/addSpot/${_id}`, {
+      fetch(`https://assignment-10-server-tan-sigma.vercel.app/addSpot/${_id}`, {
           method: 'PUT',
           headers: {
               'Content-Type': 'application/json'

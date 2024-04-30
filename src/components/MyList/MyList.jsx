@@ -13,7 +13,7 @@ const MyList = () => {
     const [tourism, setTourism] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myList/${user.email}`)
+        fetch(`https://assignment-10-server-tan-sigma.vercel.app/myList/${user.email}`)
             .then(res => res.json())
             .then(data => {
                 setTourism(data)
@@ -35,7 +35,7 @@ const MyList = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/addSpot/${_id}`, {
+                fetch(`https://assignment-10-server-tan-sigma.vercel.app/addSpot/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

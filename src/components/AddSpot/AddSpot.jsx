@@ -22,7 +22,7 @@ const AddSpot = () => {
         const photo = form.photo.value;
         const newSpot = { name, email, country_name, spot_name, description, seasonality,cost,time,visitors_per_year,location, photo };
         console.log(newSpot);
-        fetch('http://localhost:5000/addSpot', {
+        fetch('https://assignment-10-server-tan-sigma.vercel.app/addSpot', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

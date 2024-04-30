@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: ()=> fetch('http://localhost:5000/addSpot')
+        loader: ()=> fetch('https://assignment-10-server-tan-sigma.vercel.app/addSpot')
       },
       {
         path: '/login',
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: '/allTourist',
         element: <AllTourist></AllTourist>,
-        loader: ()=> fetch('http://localhost:5000/addSpot')
+        loader: ()=> fetch('https://assignment-10-server-tan-sigma.vercel.app/addSpot')
       },
       {
         path: '/register',
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
       {
         path: "/updated/:id",
         element: <UpdatedSpot></UpdatedSpot>,
-        loader: ({params}) => fetch(`http://localhost:5000/addSpot/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-10-server-tan-sigma.vercel.app/addSpot/${params.id}`)
       },
       {
         path: '/addSpot',
@@ -71,12 +71,12 @@ const router = createBrowserRouter([
       {
         path: '/viewDetails/:id',
         element: <PrivateRoute> <ViewDetails></ViewDetails> </PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/addSpot/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-10-server-tan-sigma.vercel.app/addSpot/${params.id}`)
       },
       {
         path: '/allCountry/:id',
         element: <PrivateRoute> <AllCountry></AllCountry> </PrivateRoute>,
-        loader : ({params})=> fetch(`http://localhost:5000/countries/${params.id}`)
+        loader : ({params})=> fetch(`https://assignment-10-server-tan-sigma.vercel.app/countries/${params.id}`)
       },
     ]
   },
