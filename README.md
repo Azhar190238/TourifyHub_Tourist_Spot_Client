@@ -1,6 +1,6 @@
 
 <b>My website name is : </b>TourifyHub </br>
-<b> Live link : </b> https://tour-24-193f5.web.app/ </br>
+<b> Live link : </b> omniscient-joke.surge.sh/ </br>
 <b>Server Site:  </b> https://github.com/Azhar190238/TourifyHub_Tourist_Spot_Server- </br>
 
 <p> This project aims to develop a comprehensive tourist spot related website. The main features include a Home Page with descriptions and popular tourist spots, an All Tourist Spot Page displaying all available locations, and an Add Tourist Spot Page for users to contribute new spots. Users can manage their favorite spots through a My List Page, and there are options to update or delete spots. The website also supports User Registration and Login with robust validation, including password reset features.</p>
