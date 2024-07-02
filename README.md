@@ -1,31 +1,29 @@
-B9 A10 Type-01 Requirements
-My website name is : TourifyHub
-My selected category's name: Southeast Asia
 
+<b>My website name is : </b>TourifyHub </br>
+<b> Live link : </b> https://tour-24-193f5.web.app/ </br>
+<b>Server Site:  </b> https://github.com/Azhar190238/TourifyHub_Tourist_Spot_Server- </br>
 
-Live link: https://tour-24-193f5.web.app/
+<p> This project focuses on developing a feature-rich blog-related website. Key functionalities include a Home Page with descriptions and popular blog highlights, an All Blog Page displaying all blogs, and an Add Blog Page for users to contribute new content. Users can manage their favorite blogs through a Wishlist, and there are options to update or delete blogs. The website also supports User Registration and Login with robust validation, including password reset features.</p>
 
+<h1>Key Features </h1>
 
-Here are seven basic features that a land-related website might offer;
- 
- 1) Home Page: This will be the landing page with a brief description of your application and maybe  carousel or cards displaying some popular tourist spots.
- 2) All Tourist Spot Page: This page will display all the tourist spots available in your database.
- 3) Add Tourist Spot Page: This page will allow users to add new tourist spots.
- 4) My List Page: A private/protected route where users can see the tourist spots they've added to the database.
- 5) Update/Delete: Functionality to update or delete a tourist spot, typically accessible from the My List page.
+<ul>
+     <li> <b>Dynamic Blog Management:</b>  Add, update, or delete blogs with ease.</li>
+ <li>
+ <b>User Interactivity:</b> Wishlist for managing favorite blogs and comprehensive search functionality.
+ </li>
+ <li>
+  <b>Enhanced User Experience:</b> Utilizing React-data-table, Framer Motion, React-simple-typewriter, and React Tooltip for a seamless and engaging interface.
+ </li>
+</ul>
+<h1>Technologies Used</h1>
+Node.js, JavaScript, CSS, HTML, Firebase, MongoDB, React.js, Express.js, and TailwindCSS. </br>
 
- 6) User Registration:  Simple form for users to input basic details (name, email, password). Ensure entered information meets required criteria (valid email format, strong password).
-
- 7) User Login: Form for users to input registered email and password. Option to remember login credentials for convenience. Link or button for password reset, typically involving email confirmation.
-
-
-
-npm packages: 
- I am using here three packages like;
- 1) React-simple-typewriter (Which used in banner header)
-    npm i react-simple-typewriter
-    
-
- 2) React Tooltip (Which used in log out button)
-    npm install react-tooltip
+<h1>Cloning Instructions</h1>
+<ol>
+<li>Clone the repository to your local machine.</li>
+<li>Install dependencies using npm install.</li>
+<li>Configure environment variables.</li>
+<li>Run the development server using npm start.</li>
+</ol>
 
